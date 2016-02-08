@@ -9,13 +9,17 @@
     </h:head>
     <h:body>
         <h:form>
-            <p:autoComplete value="#{paisBean.selectedPais}"
-                            completeMethod="#{paisBean.complete}"
-                            var="pais"
-                            itemLabel="#{pais.nombre}"
-                            itemValue="#{pais}"
-                            converter="paisConverter"
-                            />
+            <h:panelGrid columns="2" cellpadding="10">
+                <h:outputLabel value="Paises"/>
+                <p:autoComplete value="#{paisBean.selectedPais}"
+                                completeMethod="#{paisBean.complete}"
+                                var="pais"
+                                itemLabel="#{pais.nombre}"
+                                itemValue="#{pais}"
+                                converter="paisConverter"/>
+
+            </h:panelGrid>
+
         </h:form> 
     </h:body>
 </html>
