@@ -7,7 +7,10 @@
          id="WebApp_ID" version="2.5">
        
     <display-name>JavaServerFaces</display-name>
-
+    <context-param>
+    <param-name>primefaces.THEME</param-name>
+    <param-value>none</param-value>
+</context-param>
     <!-- Change to "Production" when you are ready to deploy -->
     <context-param>
         <param-name>javax.faces.PROJECT_STAGE</param-name>
